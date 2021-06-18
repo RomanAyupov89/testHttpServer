@@ -20,7 +20,7 @@ describe Sample::WebServer do
         server.port.should eq 33003
         server.running.should eq false
       end
-      puts "Test WebServer get_post_put"
+      puts "Test WebServer run"
       it "correctly WebServer run" do
          spawn do
             server.run
