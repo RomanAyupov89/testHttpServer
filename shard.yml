@@ -1,0 +1,16 @@
+name: sample
+version: 0.1.0
+
+authors:
+  - Ayupov Roman <your-email-here>
+
+targets:
+  sample:
+    main: src/sample.cr
+
+crystal: 1.1.0-dev
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+license: MIT
