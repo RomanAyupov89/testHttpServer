@@ -15,10 +15,12 @@ describe Sample::WebServer do
 
   describe "#Requests" do
       server = Sample::WebServer.new(33003)
+      puts "Test WebServer port"
       it "correctly WebServer nto running" do
         server.port.should eq 33003
         server.running.should eq false
       end
+      puts "Test WebServer get_post_put"
       it "correctly WebServer run" do
          spawn do
             server.run
@@ -28,7 +30,7 @@ describe Sample::WebServer do
         server.running.should eq true
      end
      sleep(3.seconds)
-     puts "Test WebServer stop"
+     puts "Test WebServer get_post_put"
       it "correctly WebServer get_post_put" do
         response = HTTP::Client.get "http://localhost:33003"
         response.status_code.should eq 200
