@@ -5,5 +5,3 @@ server = Sample::WebServer.new(33000)
 server.run
 
 server.printStart(server.port)
-
-
